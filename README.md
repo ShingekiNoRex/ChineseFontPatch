@@ -19,5 +19,7 @@
 
 # Proton/Wine 用户注意事项：
 游戏运行在 Proton 下时，需要在 Steam 启动选项中添加：
-WINEDLLOVERRIDES="winhttp=n,b" %command%
+
+`WINEDLLOVERRIDES="winhttp=n,b" %command%`
+
 否则 BepInEx 的 winhttp.dll 代理不会被 Wine 加载。
